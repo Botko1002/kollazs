@@ -4,8 +4,77 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>képlink</title>
+    <link rel="stylesheet" href="">
 </head>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+  </style>
+
+<body style="font-family: 'Anton', sans-serif;">
+<style>
+body {
+margin: 0;
+font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+margin: 0;
+padding: 0;
+width: 200px;
+background-color: #3b05ffbc;
+position: fixed;
+height: 100%;
+overflow: auto;
+}
+
+.sidebar a {
+display: block;
+color: black;
+padding: 16px;
+text-decoration: none;
+}
+
+.sidebar a.active {
+background-color: #fc010e;
+color: rgb(129, 126, 126);
+}
+
+.sidebar a:hover:not(.active) {
+background-color: rgb(248, 4, 4);
+color: rgba(41, 40, 40, 0.801);
+}
+
+div.content {
+margin-left: 200px;
+padding: 1px 16px;
+height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+.sidebar {
+width: 100%;
+height: auto;
+position: relative;
+}
+.sidebar a {float: left;}
+div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+.sidebar a {
+text-align: center;
+float: none;
+}
+}
+
+footer {
+text-align: center;
+padding: 3px;
+background-color: #fc010e;
+}
+</style>
 <body>
+  <div class="content"></div>
    <h1 style="color: rgba(100, 16, 30, 0.5);"> Batizi Pócsi Botond
    </h1>
    <h2 style="background-color: blue;">képlink feladat
@@ -14,5 +83,8 @@
 <img src="https://s13emagst.akamaized.net/products/13327/13326607/images/res_c118afe8af2f19f3919484370f0f1bc7.jpg" alt="mento" width="400" title="mento" >
 
 </a>
+<footer>
+    <a href="mailto:batizi-pocsib@kkszki.hu">e-mail</a>
+  </footer>
 </body>
 </html>
