@@ -1,8 +1,82 @@
 <!DOCTYPE html>
 <html>
+<link rel="stylesheet" href="style1.css">
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+  </style>
+
+<body style="font-family: 'Anton', sans-serif;">
+<style>
+body {
+margin: 0;
+font-family: "Lato", sans-serif;
+}
+
+.sidebar {
+margin: 0;
+padding: 0;
+width: 200px;
+background-color: #3b05ffbc;
+position: fixed;
+height: 100%;
+overflow: auto;
+}
+
+.sidebar a {
+display: block;
+color: black;
+padding: 16px;
+text-decoration: none;
+}
+
+.sidebar a.active {
+background-color: #fc010e;
+color: rgb(129, 126, 126);
+}
+
+.sidebar a:hover:not(.active) {
+background-color: rgb(248, 4, 4);
+color: rgba(41, 40, 40, 0.801);
+}
+
+div.content {
+margin-left: 200px;
+padding: 1px 16px;
+height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+.sidebar {
+width: 100%;
+height: auto;
+position: relative;
+}
+.sidebar a {float: left;}
+div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+.sidebar a {
+text-align: center;
+float: none;
+}
+}
+
+footer {
+text-align: center;
+padding: 3px;
+background-color: #fc010e;
+}
+</style>
 
 <body>
-
+  <div class="sidebar">
+    <a class=active href="index.html">Főoldal</a>
+    <a href="keplink.html">1. feladat</a>
+    <a href="listak.html">2. feladat</a>
+    <a href="orarend.html">3. feladat </a>
+  </div>
+  <div class="content">
 <h1 style="color: green;">Batizi Pócsi Botond</h1>
 <h2 style="color: yellow;"v>Batizi Pócsi Botond</h1>
 <h3 style="color: blue;">Batizi Pócsi Botond</h1>
@@ -12,23 +86,10 @@
 <p>kollázsképem:</p>
 
 
-<img src="https://botko1002.github.io/kollazs/PicsArt_11-23-01.17.13.jpg" width="400">
+<img src="PicsArt_01-12-02.00.43 (1).jpg" width="500px">
 
  
-  <br>
-  <a href="https://botko1002.github.io/kollazs/keplink.html">1.feladat</a>>>
-  
-  
-  <br>
-  <a href="https://botko1002.github.io/kollazs/ja feladat.html">2.feladat</a>>>
-  
-  
-  
-  
-  <br>
-  <a href="https://botko1002.github.io/kollazs/tablazat.html">3.feladat</a>>>
-  
-  
   
 </body>
 </html>
+
